@@ -5,7 +5,7 @@ Group Members:
 
 Joana Rose Mendoza
 
-Alliah Micole Ezperanza
+Alliah Micole Esperanza
 
 Rhea Mae Samaniego
 
