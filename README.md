@@ -7,6 +7,8 @@ Joana Rose Mendoza
 
 Alliah Micole Esperanza
 
+Andrei Granario
+
 Rhea Mae Samaniego
 
 Kendra Mae Villar
