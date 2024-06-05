@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/userbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-left: 6px solid #d13d3d;
+  }
+  h2 {
+    color: #CE5A67;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #7d7c7c;
+    padding-bottom: 10px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="number"], input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #4a4646;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.place-order-btn {
+    padding: 12px 25px;
+    background-color: #EE4E4E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.place-order-btn:hover {
+    background-color: hsl(0, 100%, 83%);
+    color: #c62424;
+}
+
+  
+  .details p {
+    margin-bottom: 10px;
+  }
+  .readonly {
+    border: none;
+    background-color: transparent;
+    pointer-events: none;
+  }
+  .summary-item {
+    margin-bottom: 10px;
+  }
+  .summary-item p {
+    margin: 0;
+  }
+  .summary-item label {
+    font-weight: normal;
+  }
+  .summary-box {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .summary-box h2 {
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
+

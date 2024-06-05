@@ -1,0 +1,97 @@
+body {
+  background-image: url('../images/userbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif; /* Added a fallback font */
+  line-height: 1.6; /* Improved readability */
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.card-header {
+  background-color: hsl(0, 31%, 45%); /* Pink color */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.list-group-item {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.edit-profile-btn {
+  margin: 20px auto; /* Center the button horizontally */
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block; /* Change display property to block */
+  transition: background-color 0.3s ease;
+}
+.btn-primary{
+  background-color: #feb3b3;
+  font-size: 20px;
+  color: #2b0d09;
+  border-color: #411d18;
+  
+}
+
+.btn-primary:hover {
+  background-color: #e3958b;
+  color: #2b0d09;
+  border-color: #e3958b;
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.btn-success{
+  background-color: #feb3b3;
+  font-size: 18px;
+  color: #2b0d09;
+  border-color: #411d18;
+}
+
+.btn-success:hover {
+  background-color: #e3958b;
+  color: #2b0d09;
+  border-color: #e3958b;
+}
+
+.bg-pink{
+  padding: 10px 20px;
+  width: 1000px;
+  background-color:hsl(0, 31%, 45%);
+  margin-left: -45.5px;
+}
+
+.bg-pink:hover{
+  background-color: #e3958b;
+color: #2b0d09;
+border-color: #e3958b;
+}
+

@@ -1,0 +1,81 @@
+
+
+/* Resetting default styles and setting up general layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/userbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: left; /* Align heading text to the left */
+}
+
+/* Styling for cards */
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align heading text to the left */
+}
+
+/* Header style for cards */
+.card-header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #A3423C;
+    color: #fff;
+    padding: 15px;
+}
+
+/* Styling form elements */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Adjusted color for better contrast */
+    text-align: left; /* Align heading text to the left */
+}
+
+.form-control {
+    border-radius: 15px; /* Reduced border radius */
+    border: 1px solid #ccc; /* Adding border for clarity */
+    padding: 8px; /* Reduced padding for a smaller form */
+    width: calc(100% - 18px); /* Ensuring form elements take full width minus padding */
+    font-size: 14px; /* Reduced font size for compactness */
+    
+}
+
+.form-group {
+    margin-bottom: 15px; /* Reduced margin for tighter spacing */
+}
+
+/* Primary button style */
+.btn-primary {
+    background-color: #A3423C;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Reduced font size for compactness */
+}
+
+.btn-primary:hover {
+    background-color: #FFB5B5;
+    color: #A73121;
+}
+
+/* Additional styling for headings */
+h2 {
+    margin-bottom: 15px; /* Reduced margin for tighter spacing */
+    background-color: #A3423C;
+    color: #fff;
+    padding: 12px;
+    border-radius: 0px;
+    font-size: 30px; /* Reduced font size for compactness */
+}
+.bg-pink{
+    background-color: #A3423C;
+}

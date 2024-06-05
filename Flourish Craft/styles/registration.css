@@ -1,0 +1,24 @@
+body {
+    background-image: url('../userbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.registration-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #0000000f;
+    margin-bottom: 20px;
+}
+.registration-form .form-group label {
+    font-weight: bold;
+}
+.registration-form .btn-success {
+    background-color: #A3423C;
+    border-color: #FFFFFF;
+}
+.registration-form .btn-link {
+    color: #6c757d;
+}

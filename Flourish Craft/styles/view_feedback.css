@@ -1,0 +1,36 @@
+/* styles/view_feedback.css */
+.review-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(247, 90, 90, 0.1);
+}
+
+.review-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.set-name {
+    font-style: italic;
+    color: #a43f3f;
+}
+
+.set-img {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.set-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

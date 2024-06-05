@@ -1,0 +1,16 @@
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.edit-profile-btn {
+  margin-top: 20px;
+}
+
+.edit-profile-btn .btn {
+  width: 200px;
+}
