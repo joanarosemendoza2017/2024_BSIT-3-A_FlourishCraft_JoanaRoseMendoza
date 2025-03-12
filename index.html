@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Summit Life Insurance Agency</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="header">
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="marquee-text">Two Summit Life Insurance Agency</span>
+            </div>
+        </div>           
+        <span id="datetime" class="datetime"></span>
+    </div>
+
+    <div class="fade-text" id="fadeText">
+        Pru Life UK
+        <p class="centered-text">Welcome to Two Summit Life Insurance Agency.</p>
+        <button id="startButton" onclick="scrollToSection('section1')">Start</button>
+    </div>
+
+    <div class="nav-circles">
+        <div class="circle" id="circle1" onclick="scrollToSection('section1')"></div>
+        <div class="circle" id="circle2" onclick="scrollToSection('section2')"></div>
+        <div class="circle" id="circle3" onclick="scrollToSection('section3')"></div>
+    </div>
+
+    <div class="content">
+        <div id="section1" class="section">
+            <iframe id="incomeFrame" src="testimonial.html" width="100%" height="600px" style="border:none;"></iframe>
+        </div>
+
+        <!-- Section 2: Embedding income.html -->
+        <div id="section2" class="section">
+            <iframe id="incomeFrame" src="income.html" width="100%" height="600px" style="border:none;"></iframe>
+        </div>
+
+        <div id="section3" class="section">
+            <p class="centered-text2">Contact us today and secure your future.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="contact-info-box">
+                <p onclick="toggleMap()">
+                    <i class="fas fa-map-marker-alt"></i> G3M2+RX Taguig, Metro Manila
+                </p>
+                <p><i class="fas fa-envelope"></i> contact@twosummit.com</p>
+                <p><i class="fas fa-phone"></i> +63 912 345 6789</p>
+            </div>
+
+            <div id="map-container" class="map-container">
+                <button class="close-btn" onclick="toggleMap()">X</button>
+                <iframe 
+                    id="map-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.9386495757862!2d121.05310639999999!3d14.522785900000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDMxJzIxLjEiTiAxMjHCsDAzJzA5LjIiRQ!5e0!3m2!1sen!2sph!4v1645606345296"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2024 Two Summit Life Insurance Agency. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            let options = { 
+                timeZone: "Asia/Manila", 
+                hour12: true, 
+                hour: "2-digit", 
+                minute: "2-digit", 
+                second: "2-digit",
+                weekday: "short",
+                day: "2-digit",
+                month: "short",
+                year: "numeric"
+            };
+            let now = new Date().toLocaleString("en-US", options);
+            document.getElementById("datetime").innerText = now;
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+
+        window.addEventListener("scroll", function () {
+            let fadeText = document.getElementById("fadeText");
+            let opacity = 1 - window.scrollY / 300;
+            fadeText.style.opacity = opacity < 0 ? 0 : opacity;
+            
+            let sections = document.querySelectorAll('.section');
+            let circles = document.querySelectorAll('.circle');
+
+            sections.forEach((section, index) => {
+                let rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                    circles.forEach(circle => circle.classList.remove('active'));
+                    circles[index].classList.add('active');
+                }
+            });
+        });
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+
+        function toggleMap() {
+            var mapContainer = document.getElementById("map-container");
+            if (mapContainer.style.display === "none" || mapContainer.style.display === "") {
+                mapContainer.style.display = "flex"; 
+            } else {
+                mapContainer.style.display = "none";
+            }
+        }
+        window.addEventListener("message", function(event) {
+    if (event.data === "goToSection2") {
+        scrollToSection("section2");
+    }
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Section</title>
+    <link rel="stylesheet" href="testimonial.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="testimonial-container">
+        <div class="testimonial-image">
+            <img id="testimonial-image" src="person6.jpg" alt="Testimonial Person">
+            <div id="testimonial-name" class="testimonial-name">Derek Chua</div>
+        </div>
+        <div class="testimonial-content">
+            <h2 id="testimonial-title" style="color: rgb(31, 31, 31);">
+                <i id="testimonial-icon" class="fas fa-user-quote"></i> 
+                <span id="testimonial-text-title">Collaborative Work Environment</span>
+            </h2>
+            <div class="testimonial-text">
+                <p id="testimonial-text">Working with people who are goal-oriented really helped me improve my career and personal life.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="features">
+    <button class="feature" onmouseover="showTestimonial(0, 'Dynamic Income', 'Carlos Mendoza', 'fa-money-bill-wave')">
+        <i class="fas fa-money-bill-wave" style="font-size: 30px; display: block; margin-bottom: 5px; margin-left: 40px;"></i>
+        Dynamic Income
+    </button>
+    <button class="feature" onmouseover="showTestimonial(1, 'Travel Incentives', 'Samantha Torres', 'fa-plane')">
+        <i class="fas fa-plane" style="font-size: 30px; display: block; margin-bottom: 5px; margin-left: 43px;"></i>
+        Travel Incentives
+    </button>
+    <button class="feature" onmouseover="showTestimonial(2, 'To Be Recognized', 'Jessica Lee', 'fa-award')">
+        <i class="fas fa-award" style="font-size: 32px; display: block; margin-bottom: 5px; margin-left: 50px;"></i>
+        To Be Recognized
+    </button>
+    <button class="feature" onmouseover="showTestimonial(3, 'Career Growth', 'Mark Gonzales', 'fa-chart-line')">
+        <i class="fas fa-chart-line" style="font-size: 32px; display: block; margin-bottom: 5px; margin-left: 44px;"></i>
+        Career Growth
+    </button>
+    <button class="feature" onmouseover="showTestimonial(4, 'Freedom of Time', 'Kimberly Ong', 'fa-clock')">
+        <i class="fas fa-clock" style="font-size: 30px; display: block; margin-bottom: 5px; margin-left: 48px;"></i>
+        Freedom of Time
+    </button>
+    <button class="feature" onmouseover="showTestimonial(5, 'Collaborative Work Environment', 'Derek Chua', 'fa-users')">
+        <i class="fas fa-users" style="font-size: 25px; display: block; margin-bottom: 5px; margin-left: 52px;"></i>
+        Collaborative Work Environment
+    </button>
+    <button class="feature" onmouseover="showTestimonial(6, 'Close and Guided Mentorship', 'Stephanie Uy', 'fa-hands-helping')">
+        <i class="fas fa-hands-helping" style="font-size: 28px; display: block; margin-bottom: 5px; margin-left: 45px;"></i>
+        Close and Guided Mentorship
+    </button>
+    <button class="feature" onmouseover="showTestimonial(7, 'Purpose', 'Angela Cruz', 'fa-heart')">
+        <i class="fas fa-heart" style="font-size: 32px; display: block; margin-bottom: 5px; margin-left: 45px;"></i>
+        Purpose
+    </button>
+</div>
+    <div class="confirmation-box">
+        <h2>Perfect!</h2>
+        <p>We are happy to see that you want what we have to offer!</p>
+        <button class="proceed-button" onclick="proceedToSection2()">Proceed</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

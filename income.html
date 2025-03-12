@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Potential</title>
+    <link rel="stylesheet" href="income.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Income Potential as an Insurance Agent</h1>
+        </header>
+        <div class="input-section">
+            <p>In our line of work, we talk to people. How many people would you be able to share ideas with in a week?</p>
+            <div class="slider-container">
+                <input type="range" min="1" max="10" value="1" id="peopleRange">
+                <div class="scale">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                    <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                </div>
+            </div>
+            <strong id="peopleCount">1</strong> people per week
+        </div>
+
+        <div class="input-section">
+            <p>To achieve their goals, how much do you think your friends would be willing to save daily?</p>
+            <div class="slider-container">
+                <input type="range" min="50" max="200" step="1" value="50" id="savingsRange">
+                <div class="minor-ticks"></div>
+                <div class="scale">
+                    <span>₱50</span><span>₱100</span><span>₱150</span><span>₱200</span>
+                </div>
+            </div>
+            <strong id="savingsAmount">₱50</strong> per day
+        </div>
+
+        <div class="result">
+            <p>By talking to <span id="peopleText">1</span> people per week, you can potentially earn a monthly income of <strong id="income">₱4,800.00</strong></p>
+        </div>
+
+        <!-- Button to redirect to interested.html -->
+        <button class="cta-button" id="interestedBtn">I'm Interested!</button>
+    </div>
+
+    <script>
+        const peopleRange = document.getElementById('peopleRange');
+        const savingsRange = document.getElementById('savingsRange');
+        const peopleText = document.getElementById('peopleText');
+        const peopleCount = document.getElementById('peopleCount');
+        const savingsAmount = document.getElementById('savingsAmount');
+        const income = document.getElementById('income');
+
+        function updateIncome() {
+            let people = parseInt(peopleRange.value);
+            let savings = parseInt(savingsRange.value);
+
+            let baseIncome = 4800; // Income for 1 person at ₱50 savings
+            let calculatedIncome = people * (baseIncome * (savings / 50)); // Adjust income scaling
+
+            peopleText.textContent = people;
+            peopleCount.textContent = people;
+            savingsAmount.textContent = `₱${savings}`;
+            income.textContent = `₱${calculatedIncome.toLocaleString()}.00`;
+        }
+
+        peopleRange.addEventListener('input', updateIncome);
+        savingsRange.addEventListener('input', updateIncome);
+
+        // Redirect to interested.html when the button is clicked
+        document.getElementById("interestedBtn").addEventListener("click", function() {
+            window.location.href = "interested.html";
+        });
+    </script>
+</body>
+</html>
